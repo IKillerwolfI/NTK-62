@@ -1,0 +1,274 @@
+<table name="Sumitomo Type-62 LMG" image="guis/sumitomo" color="Color(0, 0.1, 0.5)">
+
+	<Localization directory="Localization" default="english.txt"/>
+	
+	<AssetUpdates id="22xxx" name="asset_updates" use_local_dir="true" use_local_path="true" provider="modworkshop"/>
+	
+	<GlobalValue id="sumitomomod" color="Color(0, 0.1, 0.5)"/>
+	
+	<!--Base Gun Part-->
+	<WeaponMod id="wpn_fps_lmg_sumitomo_barrel" based_on="wpn_fps_lmg_par_b_standard" type="barrel" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_barrel" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_lmg_sumitomo_receiver" based_on="wpn_fps_lmg_par_body_standard" type="lower_reciever" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_receiver" drop="false" is_a_unlockable="false"/>
+	
+	<WeaponMod id="wpn_fps_lmg_sumitomo_grip" based_on="wpn_fps_lmg_par_body_standard" type="grip" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_grip" drop="false" is_a_unlockable="false"/>
+	
+	<WeaponMod id="wpn_fps_lmg_sumitomo_topcover" based_on="wpn_fps_lmg_par_upper_reciever" type="upper_reciever" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_topcover" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_lmg_sumitomo_magbox" based_on="wpn_fps_lmg_par_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_magbox" drop="false" is_a_unlockable="false">
+		<!-- <stats reload="4"/> -->
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_lmg_sumitomo_stock" based_on="wpn_fps_lmg_par_s_standard" type="stock" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_stock" drop="false" is_a_unlockable="false"/>
+	
+	<WeaponMod id="wpn_fps_lmg_sumitomo_muzzledevice" based_on="wpn_fps_ass_scar_ns_standard" type="barrel_ext" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_muzzledevice" drop="false" is_a_unlockable="false"/>
+
+	
+	<!--Attachment Option-->
+	<WeaponMod id="wpn_fps_lmg_sumitomo_b_long" based_on="wpn_fps_lmg_par_b_standard" type="barrel" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_b_long" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats spread="-1" recoil="2" concealment="-2"/>
+		<pcs/>
+	</WeaponMod>	
+	
+	<WeaponMod id="wpn_fps_lmg_sumitomo_s_polymer" based_on="wpn_fps_lmg_par_s_standard" type="stock" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_s_polymer" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats recoil="1"/>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_lmg_sumitomo_ext_carryhandle" based_on="wpn_fps_lmg_par_body_standard" type="extra" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_ext_carryhandle" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats damage="1" spread="-1" recoil="1" suppression = "-7" concealment="-1"/>
+		<pcs/>
+	</WeaponMod>	
+	
+	
+	
+	<WeaponNew unlock_level="70">
+		<weapon id="sumitomo" based_on="par" weapon_hold = "par" CLIP_AMMO_MAX="100" NR_CLIPS_MAX="3" CAN_TOGGLE_FIREMODE = "false" texture_bundle_folder="mods" global_value="sumitomomod">
+			<stats damage="120" spread="12" spread_moving="10" recoil="11" concealment="2" value="12"/>
+			<fire_mode_data fire_rate="0.1090909090909091"/>
+			<AMMO_PICKUP>
+				<value_node value="6"/>
+				<value_node value="10"/>
+			</AMMO_PICKUP>
+			<!-- <kick>
+				<standing>
+					<value_node value="1.0"/>
+					<value_node value="0.4"/>
+					<value_node value="-0.5"/>
+					<value_node value="0.9"/>
+				</standing>
+				<crouching>
+					<value_node value="1.0"/>
+					<value_node value="0.4"/>
+					<value_node value="-0.5"/>
+					<value_node value="0.9"/>
+				</crouching>
+				<steelsight>
+					<value_node value="0.9"/>
+					<value_node value="0.3"/>
+					<value_node value="-0.4"/>
+					<value_node value="0.8"/>
+				</steelsight>
+			</kick> -->
+			<!-- <timers reload_not_empty = "5.7" reload_empty = "5.7"/> -->
+			<!-- <sounds fire = "sumitomo_fire" fire_single = "sumitomo_fire" fire_auto = "sumitomo_fire" stop_fire = "sumitomo_stop" use_fix="true"/> -->
+			<animations reload_name_id="par" equip_id="equip_par" recoil_steelsight="true" bipod_enter = "bipod_enter" bipod_exit = "bipod_exit" bipod_recoil = "bipod_recoil" bipod_recoil_enter = "bipod_recoil" bipod_recoil_loop = "bipod_recoil_loop" bipod_recoil_exit = "bipod_recoil_exit"/>
+		</weapon>
+        <factory id="wpn_fps_lmg_sumitomo" unit="units/mods/weapons/wpn_fps_lmg_sumitomo/wpn_fps_lmg_sumitomo">
+			<optional_types>
+				<value_node value="barrel_ext"/>
+				<value_node value="gadget"/>
+			</optional_types>
+			<default_blueprint>
+				<value_node value="wpn_fps_lmg_sumitomo_barrel"/>
+				<value_node value="wpn_fps_lmg_sumitomo_receiver"/>				
+				<value_node value="wpn_fps_lmg_sumitomo_grip"/>				
+				<value_node value="wpn_fps_lmg_sumitomo_magbox"/>
+				<value_node value="wpn_fps_lmg_sumitomo_topcover"/>
+				<value_node value="wpn_fps_lmg_sumitomo_stock"/>
+				<value_node value="wpn_fps_lmg_sumitomo_muzzledevice"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_lmg_sumitomo_barrel"/>
+				<value_node value="wpn_fps_lmg_sumitomo_receiver"/>				
+				<value_node value="wpn_fps_lmg_sumitomo_grip"/>				
+				<value_node value="wpn_fps_lmg_sumitomo_magbox"/>
+				<value_node value="wpn_fps_lmg_sumitomo_topcover"/>
+				<value_node value="wpn_fps_lmg_sumitomo_stock"/>
+				<value_node value="wpn_fps_lmg_sumitomo_muzzledevice"/>
+				
+				<value_node value="wpn_fps_lmg_sumitomo_b_long"/>
+				<value_node value="wpn_fps_lmg_sumitomo_s_polymer"/>
+				<value_node value="wpn_fps_lmg_sumitomo_ext_carryhandle"/>
+				
+				<value_node value="wpn_fps_upg_bp_lmg_lionbipod"/>
+				
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>				
+			</uses_parts>
+		</factory>
+		<stance/>
+	</WeaponNew>
+	
+	<AddFiles directory="assets">
+		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/sumitomo_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/sumitomo_df_cc"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/sumitomo_nm"/>
+		
+		<!--base weapon-->
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_sumitomo/wpn_fps_lmg_sumitomo"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_sumitomo/wpn_fps_lmg_sumitomo"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_sumitomo/wpn_fps_lmg_sumitomo"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_sumitomo/wpn_fps_lmg_sumitomo"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_sumitomo/wpn_fps_lmg_sumitomo_npc"/>
+
+		
+		<!--default parts-->
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_barrel"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_barrel"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_barrel"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_barrel_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_barrel_cc"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_barrel_cc_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_receiver"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_receiver"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_receiver"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_receiver"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_receiver"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_receiver_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_receiver_cc"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_receiver_cc_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_grip"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_grip"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_grip"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_grip"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_grip"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_grip_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_grip_cc"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_grip_cc_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_topcover"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_topcover"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_topcover"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_topcover"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_topcover"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_topcover_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_topcover_cc"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_topcover_cc_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_magbox"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_magbox"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_magbox"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_magbox"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_magbox"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_magbox_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_magbox_cc"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_magbox_cc_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_stock"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_stock"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_stock"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_stock"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_stock"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_stock_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_stock_cc"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_stock_cc_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_muzzledevice"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_muzzledevice"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_muzzledevice"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_muzzledevice"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_muzzledevice"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_muzzledevice_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_muzzledevice_cc"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_muzzledevice_cc_thq"/>
+		
+		
+		<!--customization parts-->		
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_b_long"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_b_long"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_b_long"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_b_long"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_b_long"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_b_long_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_b_long_cc"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_b_long_cc_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_ext_carryhandle"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_ext_carryhandle"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_ext_carryhandle"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_ext_carryhandle"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_ext_carryhandle"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_ext_carryhandle_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_ext_carryhandle_cc"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_ext_carryhandle_cc_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_s_polymer"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_s_polymer"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_s_polymer"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_s_polymer"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_s_polymer"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_s_polymer_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_s_polymer_cc"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_s_polymer_cc_thq"/>
+		
+		<!--Bipod-->
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_vanilla"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_vanilla"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_vanilla"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_vanilla"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_vanilla"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_vanilla_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_vanilla_cc"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_vanilla_cc_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_improved"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_improved"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_improved"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_improved"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_improved"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_improved_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_improved_cc"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_improved_cc_thq"/>
+		
+		
+		<!--Icon-->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_sumitomo_b_long"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_sumitomo_ext_carryhandle"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_sumitomo_s_polymer"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/sumitomo"/>
+		<png path="guis/sumitomo"/>
+	</AddFiles>
+	
+	<Sounds directory="assets\soundbank">
+		<!-- <sound id="sumitomo_fire" path="sumitomo_fire.ogg" prefix="regular"/>
+		<sound id="sumitomo_fire" path="sumitomo_fire_silenced.ogg" prefix="suppressed_a"/>
+		<sound id="sumitomo_fire" path="sumitomo_fire_silenced.ogg" prefix="suppressed_b"/>
+		<sound id="sumitomo_fire" path="sumitomo_fire_silenced.ogg" prefix="suppressed_c"/> -->
+	</Sounds>
+	
+	<Hooks directory="Hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+		<hook file="playertweakdata.lua" source_file="lib/tweak_data/playertweakdata"/>
+	</Hooks>
+	
+</table>
