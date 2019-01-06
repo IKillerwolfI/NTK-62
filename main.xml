@@ -2,7 +2,7 @@
 
 	<Localization directory="Localization" default="english.txt"/>
 	
-	<AssetUpdates id="22xxx" name="asset_updates" use_local_dir="true" use_local_path="true" provider="modworkshop"/>
+	<AssetUpdates id="22xxx" name="asset_updates" use_local_dir="true" use_local_path="true" version="1" provider="modworkshop"/>
 	
 	<GlobalValue id="sumitomomod" color="Color(0, 0.1, 0.5)"/>
 	
