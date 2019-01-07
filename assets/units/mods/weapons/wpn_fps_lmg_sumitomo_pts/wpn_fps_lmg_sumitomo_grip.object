@@ -13,7 +13,7 @@
 	
 	<graphics>
 		<object name="g_body" enabled="true" />
-		<object name="g_bolt" enabled="true" />
+		<object name="g_bolt" enabled="false" />
 	</graphics>
 	
 </dynamic_object>
