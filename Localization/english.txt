@@ -2,7 +2,7 @@
 "bm_w_sumitomo" : "NTK-62 General-Purpose Machine Gun"
 "bm_wp_wpn_fps_lmg_sumitomo_b_long" : "Heavy Barrel"
 "bm_wp_wpn_fps_lmg_sumitomo_s_polymer" : "Polymer Stock"
-"bm_wp_wpn_fps_lmg_sumitomo_ext_carryhandle" : "Carry Handle"
+"bm_wp_wpn_fps_lmg_sumitomo_ch_new" : "Carry Handle"
 
 "menu_l_global_value_sumitomomod" : "This is a Collab mod!"
 }
