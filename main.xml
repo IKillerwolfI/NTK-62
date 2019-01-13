@@ -2,7 +2,7 @@
 
 	<Localization directory="Localization" default="english.txt"/>
 	
-	<AssetUpdates id="22xxx" name="asset_updates" use_local_dir="true" use_local_path="true" provider="modworkshop"/>
+	<AssetUpdates id="24323" name="asset_updates" use_local_dir="true" use_local_path="true" provider="modworkshop"/>
 	
 	<GlobalValue id="sumitomomod" color="Color(0, 0.1, 0.5)"/>
 	
@@ -82,7 +82,7 @@
 			<default_blueprint>
 				<value_node value="wpn_fps_lmg_sumitomo_barrel"/>
 				<value_node value="wpn_fps_lmg_sumitomo_receiver"/>				
-				<value_node value="wpn_fps_lmg_sumitomo_grip"/>				
+				<!-- <value_node value="wpn_fps_lmg_sumitomo_grip"/>				 -->
 				<value_node value="wpn_fps_lmg_sumitomo_magbox"/>
 				<value_node value="wpn_fps_lmg_sumitomo_topcover"/>
 				<value_node value="wpn_fps_lmg_sumitomo_stock"/>
@@ -91,7 +91,7 @@
 			<uses_parts>
 				<value_node value="wpn_fps_lmg_sumitomo_barrel"/>
 				<value_node value="wpn_fps_lmg_sumitomo_receiver"/>				
-				<value_node value="wpn_fps_lmg_sumitomo_grip"/>				
+				<!-- <value_node value="wpn_fps_lmg_sumitomo_grip"/>				 -->
 				<value_node value="wpn_fps_lmg_sumitomo_magbox"/>
 				<value_node value="wpn_fps_lmg_sumitomo_topcover"/>
 				<value_node value="wpn_fps_lmg_sumitomo_stock"/>
