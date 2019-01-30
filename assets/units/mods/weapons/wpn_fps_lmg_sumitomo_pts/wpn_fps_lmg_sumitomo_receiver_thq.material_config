@@ -1,22 +1,22 @@
 <materials version="3" group="weapon_group">
 	<material name="mtr_body" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
-		<diffuse_texture file="units/pd2_dlc_par/weapons/wpn_fps_lmg_par_pts/receiver_df" mip="1"  />
-		<bump_normal_texture file="units/pd2_dlc_par/weapons/wpn_fps_lmg_par_pts/receiver_nm" mip="1"  />
+		<diffuse_texture file="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/receiver_texture/receiver_df" mip="1"  />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/receiver_texture/receiver_nm" mip="1"  />
 	</material>
 	<material name="mtr_carry" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
-		<diffuse_texture file="units/pd2_dlc_par/weapons/wpn_fps_lmg_par_pts/carry_df" mip="1"  />
-		<bump_normal_texture file="units/pd2_dlc_par/weapons/wpn_fps_lmg_par_pts/carry_nm" mip="1"  />
+		<diffuse_texture file="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/receiver_texture/carry_df" mip="1"  />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/receiver_texture/carry_nm" mip="1"  />
 	</material>
 	<material name="mtr_dustcover" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
-		<diffuse_texture file="units/pd2_dlc_par/weapons/wpn_fps_lmg_par_pts/dustcover_df" mip="1"  />
-		<bump_normal_texture file="units/pd2_dlc_par/weapons/wpn_fps_lmg_par_pts/dustcover_nm" mip="1"  />
+		<diffuse_texture file="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/receiver_texture/dustcover_df" mip="1"  />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/receiver_texture/dustcover_nm" mip="1"  />
 	</material>
 	<material name="mtr_feed" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
-		<diffuse_texture file="units/pd2_dlc_par/weapons/wpn_fps_lmg_par_pts/feed_df" mip="1"  />
-		<bump_normal_texture file="units/pd2_dlc_par/weapons/wpn_fps_lmg_par_pts/feed_nm" mip="1"  />
+		<diffuse_texture file="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/receiver_texture/feed_df" mip="1"  />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/receiver_texture/feed_nm" mip="1"  />
 	</material>
 	<material name="mtr_sight" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
-		<diffuse_texture file="units/pd2_dlc_par/weapons/wpn_fps_lmg_par_pts/sight_df" mip="1"  />
-		<bump_normal_texture file="units/pd2_dlc_par/weapons/wpn_fps_lmg_par_pts/sight_nm" mip="1"  />
+		<diffuse_texture file="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/receiver_texture/sight_df" mip="1"  />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/receiver_texture/sight_nm" mip="1"  />
 	</material>
 </materials>
