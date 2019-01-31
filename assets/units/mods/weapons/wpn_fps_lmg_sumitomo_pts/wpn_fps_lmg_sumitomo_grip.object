@@ -12,8 +12,9 @@
 	</animations>
 	
 	<graphics>
-		<object name="g_body" enabled="true" />
-		<object name="g_bolt" enabled="false" />
+		<object name="g_grip" enabled="true" />
+		<object name="g_trigger" enabled="true" />
+		<!--<object name="g_bolt" enabled="false" />-->
 	</graphics>
 	
 </dynamic_object>

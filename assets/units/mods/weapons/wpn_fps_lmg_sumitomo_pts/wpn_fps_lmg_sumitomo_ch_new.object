@@ -12,8 +12,8 @@
 	</animations>
 	
 	<graphics>
-		<object name="g_body" enabled="true" />
-		<object name="g_bolt" enabled="false" />
+		<object name="g_carry" enabled="true" />
+		<!--<object name="g_bolt" enabled="false" />-->
 	</graphics>
 	
 </dynamic_object>

@@ -4,7 +4,7 @@
 		<bump_normal_texture file="units/pd2_dlc_par/weapons/wpn_fps_lmg_par_pts/bullet_nm" mip="1"  />
 	</material>
 	<material name="mtr_mag" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
-		<diffuse_texture file="units/pd2_dlc_par/weapons/wpn_fps_lmg_par_pts/mag_df" mip="1"  />
-		<bump_normal_texture file="units/pd2_dlc_par/weapons/wpn_fps_lmg_par_pts/mag_nm" mip="1"  />
+		<diffuse_texture file="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/fa-source_texture/m60_magbox_df" mip="1"  />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/fa-source_texture/m60_magbox_nm" mip="1"  />
 	</material>
 </materials>

@@ -12,7 +12,9 @@
 	</animations>
 	
 	<graphics>
-		<object name="g_body" enabled="true" />
+		<object name="g_body1" enabled="true" />
+		<object name="g_feed" enabled="true" />
+		<object name="g_boltcarrier" enabled="true" />
 		<object name="g_bolt" enabled="true" />
 	</graphics>
 	
