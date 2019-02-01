@@ -1,8 +1,9 @@
 {
-"bm_w_sumitomo" : "Sumitomo 62 General-Purpose Machine Gun"
+"bm_w_sumitomo" : "Sumitomo 62 GP Machine Gun"
 "bm_wp_wpn_fps_lmg_sumitomo_b_long" : "Heavy Barrel"
 "bm_wp_wpn_fps_lmg_sumitomo_s_polymer" : "Polymer Stock"
 "bm_wp_wpn_fps_lmg_sumitomo_ch_new" : "Carry Handle"
+"bm_wp_wpn_fps_lmg_sumitomo_m_belt" : "300rnd Belt"
 
 "menu_l_global_value_sumitomomod" : "This is a Joint-Collab mod!"
 }

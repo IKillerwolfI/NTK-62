@@ -12,10 +12,14 @@
 	</animations>
 	
 	<graphics>
-		<object name="g_body1" enabled="true" />
-		<object name="g_feed" enabled="true" />
-		<object name="g_boltcarrier" enabled="true" />
-		<object name="g_bolt" enabled="true" />
+		
+		<graphic_group name="character" enabled="true" culling_object="g_body1">
+			<object name="g_body1" inherit_bounding_volume="co_culling" enabled="true" />
+			<object name="g_feed" inherit_bounding_volume="co_culling" enabled="true" />
+			<object name="g_boltcarrier" inherit_bounding_volume="co_culling" enabled="true" />
+			<object name="g_bolt" inherit_bounding_volume="co_culling" enabled="true" />
+		</graphic_group>
+	
 	</graphics>
 	
 </dynamic_object>

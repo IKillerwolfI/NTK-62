@@ -9,8 +9,8 @@
 		</animation_group>
 	</animations>
 	<graphics>
-		<object name="g_base" enabled="true" />
+		<object name="g_base" enabled="false" />
 		<object name="g_legs" enabled="true" />
-		<object name="g_legs1" enabled="true" />
+		<object name="g_legs1" enabled="false" />
 	</graphics>
 </dynamic_object>

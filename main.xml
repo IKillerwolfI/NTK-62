@@ -41,14 +41,30 @@
 	<WeaponMod id="wpn_fps_lmg_sumitomo_ch_new" based_on="wpn_fps_lmg_par_body_standard" type="extra" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_ch_new" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
 		<stats reload="2"/>
 		<pcs/>
+	</WeaponMod>
+	
+	<!--Ammo Belt group-->
+	<WeaponMod id="wpn_fps_lmg_sumitomo_m_belt" based_on="wpn_fps_lmg_par_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt1" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats concealment="-4" reload="-4" extra_ammo="150"/>
+		<custom_stats movement_speed="0.7"/>
+		<bullet_objects amount="20" prefix="g_bullet_"/>
+		<adds>
+			<value_node value="wpn_fps_lmg_sumitomo_m_belt2"/>
+			<value_node value="wpn_fps_lmg_sumitomo_m_belt3"/>
+			<!-- <value_node value="wpn_fps_lmg_sumitomo_m_belt4"/> -->
+		</adds>
+		<pcs/>
 	</WeaponMod>	
+	<WeaponMod id="wpn_fps_lmg_sumitomo_m_belt2" based_on="wpn_fps_lmg_par_m_standard" type="magazine" a_obj="a_m2" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt2" drop="false" is_a_unlockable="false"/>
+	<WeaponMod id="wpn_fps_lmg_sumitomo_m_belt3" based_on="wpn_fps_lmg_par_m_standard" type="magazine" a_obj="a_m3" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt3" drop="false" is_a_unlockable="false"/>
+	<WeaponMod id="wpn_fps_lmg_sumitomo_m_belt4" based_on="wpn_fps_lmg_par_m_standard" type="magazine" a_obj="a_m4" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt4" drop="false" is_a_unlockable="false"/>
 	
 	
 	
 	<WeaponNew unlock_level="70">
 		<weapon id="sumitomo" based_on="par" weapon_hold = "par" CLIP_AMMO_MAX="100" NR_CLIPS_MAX="3" CAN_TOGGLE_FIREMODE = "false" texture_bundle_folder="mods" global_value="sumitomomod">
 			<stats damage="120" spread="12" recoil="7" concealment="2" value="12"/>
-			<fire_mode_data fire_rate="0.1090909090909091"/>
+			<fire_mode_data fire_rate="0.009"/> <!--0.1090909090909091-->
 			<AMMO_PICKUP>
 				<value_node value="6"/>
 				<value_node value="10"/>
@@ -105,6 +121,7 @@
 				<value_node value="wpn_fps_lmg_sumitomo_s_polymer"/>
 				<value_node value="wpn_fps_lmg_sumitomo_ch_new"/>
 				<!-- <value_node value="wpn_fps_lmg_sumitomo_b_long"/> -->
+				<value_node value="wpn_fps_lmg_sumitomo_m_belt"/>
 				
 				<value_node value="wpn_fps_upg_bp_lmg_lionbipod"/>
 				
@@ -165,6 +182,10 @@
 		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/rs2_texture/m2_barrelshroud_df"/>
 		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/rs2_texture/m2_barrelshroud_df_cc"/>
 		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/rs2_texture/m2_barrelshroud_nm"/>
+		
+		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/bf4_texture/m107_bipod_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/bf4_texture/m107_bipod_df_cc"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/bf4_texture/m107_bipod_nm"/>
 		
 		
 		<!--base weapon-->
@@ -277,15 +298,16 @@
 		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_s_polymer_cc"/>
 		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_s_polymer_cc_thq"/>
 		
+		
 		<!--Bipod-->
-		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_vanilla"/>
+		<!-- <cooked_physics path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_vanilla"/>
 		<model path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_vanilla"/>
 		<object path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_vanilla"/>
 		<unit path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_vanilla"/>
 		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_vanilla"/>
 		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_vanilla_thq"/>
 		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_vanilla_cc"/>
-		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_vanilla_cc_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_vanilla_cc_thq"/> -->
 		
 		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_improved"/>
 		<model path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_improved"/>
@@ -297,10 +319,36 @@
 		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/wpn_fps_lmg_sumitomo_bipod_improved_cc_thq"/>
 		
 		
+		<!--Ammo Belt-->
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_ammo_universal"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_ammo_universal_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt1"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt1"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt1"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt1"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt2"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt2"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt2"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt2"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt3"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt3"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt3"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt3"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt4"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt4"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt4"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt4"/>
+		
+		
 		<!--Icon-->
 		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_sumitomo_b_long"/>
 		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_sumitomo_ch_new"/>
 		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_sumitomo_s_polymer"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_sumitomo_m_belt"/>
 		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/sumitomo"/>
 		<png path="guis/sumitomo"/>
 	</AddFiles>
