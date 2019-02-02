@@ -12,7 +12,10 @@
 	</animations>
 	
 	<graphics>
-		<object name="g_carry" enabled="true" />
+		<graphic_group name="character" enabled="true" culling_object="g_carry">
+			<object name="g_carry" inherit_bounding_volume="co_culling" enabled="true" />
+		</graphic_group>
+		
 		<!--<object name="g_bolt" enabled="false" />-->
 	</graphics>
 	

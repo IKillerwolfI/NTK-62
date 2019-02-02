@@ -1,0 +1,22 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_guide" orientation_object="rp_wpn_fps_lmg_svinet_body_standard" />
+	
+	<animations>
+		<animation_group name="reload">
+		  <object name="a_reload" enabled="true" />
+		</animation_group>
+		
+		<animation_group name="reload_not_empty">
+		  <object name="a_reload_not_empty" enabled="true" />
+		</animation_group>		
+	</animations>
+	
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="g_guide">
+			<object name="g_guide" inherit_bounding_volume="co_culling" enabled="true" />
+		</graphic_group>
+		
+		<!--<object name="g_bolt" enabled="false" />-->		
+	</graphics>
+	
+</dynamic_object>

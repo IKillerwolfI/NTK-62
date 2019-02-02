@@ -1,0 +1,6 @@
+<materials version="3" group="weapon_group">
+	<material name="mtr_carry" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/fa-source_texture/m60_magbox_df" />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/fa-source_texture/m60_magbox_nm" />
+	</material>
+</materials>

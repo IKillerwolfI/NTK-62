@@ -21,17 +21,17 @@ if self.sumitomo then
 		{
 			name = "a_m2",
 			base_a_obj = "a_m",
-			position = Vector3(-0.25, 0, -4.5),
+			position = Vector3(0, 0, -4.5),
 		},
 		{
 			name = "a_m3",
 			base_a_obj = "a_m",
-			position = Vector3(-0.25, 0, -9),
+			position = Vector3(0, 0, -9),
 		},
 		{
 			name = "a_m4",
 			base_a_obj = "a_m",
-			position = Vector3(-0.25, 0, -13.5),
+			position = Vector3(0, 0, -13.5),
 		},
 		
 		--Gadget Position
