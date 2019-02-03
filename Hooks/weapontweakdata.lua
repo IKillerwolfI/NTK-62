@@ -6,7 +6,17 @@ if self.sumitomo then
 		{
 			name = "a_b",
 			base_a_obj = "a_b",
-			position = Vector3(0, 0, 0),
+			position = Vector3(0, -3, 0),
+		},
+		{
+			name = "a_b_long",
+			base_a_obj = "a_b",
+			position = Vector3(0, 10, 0),
+		},
+		{
+			name = "a_b_short",
+			base_a_obj = "a_b",
+			position = Vector3(0, -5, 0),
 		},
 		
 		--Bipod Position

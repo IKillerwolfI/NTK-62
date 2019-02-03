@@ -13,6 +13,27 @@ else
 end
 
 
+--Heavy Barrel
+self.parts.wpn_fps_lmg_sumitomo_b_long.override = {
+	--not visible default part
+	wpn_fps_lmg_sumitomo_bl_shroud = { unit = "units/mods/weapons/wpn_fps_lmg_sumitomo_b_antiair/wpn_fps_lmg_sumitomo_bl_shroud" },
+	wpn_fps_lmg_sumitomo_muzzledevice = { unit = "units/mods/weapons/wpn_fps_lmg_sumitomo_b_antiair/wpn_fps_lmg_sumitomo_muzzledevice" }
+}
+self.parts.wpn_fps_lmg_sumitomo_b_long.forbids = {
+	--barrel_ext
+	"wpn_fps_upg_ns_ass_smg_large",
+	"wpn_fps_upg_ns_ass_smg_medium",
+	"wpn_fps_upg_ns_ass_smg_small",
+	"wpn_fps_upg_ns_ass_smg_firepig",
+	"wpn_fps_upg_ns_ass_smg_stubby",
+	"wpn_fps_upg_ns_ass_smg_tank",
+	"wpn_fps_upg_ass_ns_jprifles",
+	"wpn_fps_upg_ass_ns_linear",
+	"wpn_fps_upg_ass_ns_surefire",
+	"wpn_fps_upg_ass_ns_battle"
+}
+
+
 --ammo belt stuff
 self.parts.wpn_fps_lmg_sumitomo_m_belt.thq_material_config = Idstring("units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_ammo_universal_thq")
 self.parts.wpn_fps_lmg_sumitomo_m_belt2.thq_material_config = Idstring("units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_ammo_universal_thq")
