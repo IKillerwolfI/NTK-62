@@ -1,6 +1,6 @@
 <materials version="3" group="weapon_group">
 	<material name="mtr_dustcover" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
-		<diffuse_texture file="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/receiver_texture/dustcover_df" mip="1"  />
-		<bump_normal_texture file="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/receiver_texture/dustcover_nm" mip="1"  />
+		<diffuse_texture file="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/rs2_texture/m1919_ironsight_df" mip="1"  />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/rs2_texture/m1919_ironsight_nm" mip="1"  />
 	</material>
 </materials>
