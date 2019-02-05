@@ -1,8 +1,9 @@
 {
-"bm_w_sumitomo" : "Sumitomo 62 GP Machine Gun"
+"bm_w_sumitomo" : "Sumitomo-62 GP Machine Gun"
 "bm_wp_wpn_fps_lmg_sumitomo_b_long" : "Custom AA Barrel"
 "bm_wp_wpn_fps_lmg_sumitomo_b_short" : "Light Barrel"
 "bm_wp_wpn_fps_lmg_sumitomo_s_polymer" : "Polymer Stock"
+"bm_wp_wpn_fps_lmg_sumitomo_s_spare" : "Recycled Stock"
 "bm_wp_wpn_fps_lmg_sumitomo_ch_new" : "Modern Carry Handle"
 "bm_wp_wpn_fps_lmg_sumitomo_ch_old" : "Spare-part Carry Handle"
 "bm_wp_wpn_fps_lmg_sumitomo_ch_old_desc" : "Increases movement speed by +20%"

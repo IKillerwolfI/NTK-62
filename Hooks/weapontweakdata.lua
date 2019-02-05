@@ -16,14 +16,19 @@ if self.sumitomo then
 		{
 			name = "a_b_short",
 			base_a_obj = "a_b",
-			position = Vector3(0, -5, 0),
+			position = Vector3(0, -15, 0),
+		},
+		{
+			name = "a_ns",
+			base_a_obj = "a_ns",
+			position = Vector3(0, 1, 0),
 		},
 		
 		--Bipod Position
 		{
 			name = "a_bp",
 			base_a_obj = "a_bp",
-			position = Vector3(0, 20, 0),
+			position = Vector3(0, 26.75, 2.25),
 			rotation = Rotation(0, 0, 0)
 		},
 		
@@ -42,6 +47,16 @@ if self.sumitomo then
 			name = "a_m4",
 			base_a_obj = "a_m",
 			position = Vector3(0, 0, -13.5),
+		},
+		{
+			name = "a_m5",
+			base_a_obj = "a_m",
+			position = Vector3(0, 0, -18),
+		},
+		{
+			name = "a_m6",
+			base_a_obj = "a_m",
+			position = Vector3(0, 0, -22.5),
 		},
 		
 		--Gadget Position
