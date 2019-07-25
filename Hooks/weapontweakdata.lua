@@ -1,5 +1,13 @@
 Hooks:PostHook(WeaponTweakData, "init", "SumitomoModInit", function(self)
 
+self.sumitomo_crew = deep_clone(self.par_crew)
+if not BeardLib.Utils:FindMod("RestorationMod") then
+	self.sumitomo_crew.DAMAGE = 2
+	self.sumitomo_crew.CLIP_AMMO_MAX = 100
+	self.sumitomo_crew.NR_CLIPS_MAX = 3
+	self.sumitomo_crew.auto.fire_rate = 0.109
+end
+
 if self.sumitomo then
 	self.sumitomo.attachment_points = {
 		--Barrel Repositioning
