@@ -5,8 +5,10 @@
 "bm_wp_wpn_fps_lmg_sumitomo_s_polymer" : "Polymer Stock"
 "bm_wp_wpn_fps_lmg_sumitomo_s_spare" : "Recycled Stock"
 "bm_wp_wpn_fps_lmg_sumitomo_ch_new" : "Modern Carry Handle"
+
 "bm_wp_wpn_fps_lmg_sumitomo_ch_old" : "Spare-part Carry Handle"
 "bm_wp_wpn_fps_lmg_sumitomo_ch_old_desc" : "Increases movement speed by +20%"
+
 "bm_wp_wpn_fps_lmg_sumitomo_m_belt" : "300rnd Belt"
 "bm_wp_wpn_fps_lmg_sumitomo_m_belt_desc" : "Decreases movement speed by -30%"
 

@@ -50,7 +50,7 @@ if self.sumitomo then
 			base_a_obj = "a_m",
 			part_attach_data = {
 				{"wpn_fps_lmg_sumitomo_m_belt"}, 
-				"rp_wpn_fps_lmg_svinet_m_standard"
+				"g_mag"
 			},
 			position = Vector3(0, 0, -4.5),
 			rotation = RotationCAP(0, 0, 0)
@@ -60,7 +60,7 @@ if self.sumitomo then
 			base_a_obj = "a_m",
 			part_attach_data = {
 				{"wpn_fps_lmg_sumitomo_m_belt"}, 
-				"rp_wpn_fps_lmg_svinet_m_standard"
+				"g_mag"
 			},
 			position = Vector3(0, 0, -9),
 			rotation = RotationCAP(0, 0, 0)
@@ -70,7 +70,7 @@ if self.sumitomo then
 			base_a_obj = "a_m",
 			part_attach_data = {
 				{"wpn_fps_lmg_sumitomo_m_belt"}, 
-				"rp_wpn_fps_lmg_svinet_m_standard"
+				"g_mag"
 			},
 			position = Vector3(0, 0, -13.5),
 			rotation = RotationCAP(0, 0, 0)
@@ -80,7 +80,7 @@ if self.sumitomo then
 			base_a_obj = "a_m",
 			part_attach_data = {
 				{"wpn_fps_lmg_sumitomo_m_belt"}, 
-				"rp_wpn_fps_lmg_svinet_m_standard"
+				"g_mag"
 			},
 			position = Vector3(0, 0, -18),
 			rotation = RotationCAP(0, 0, 0)
@@ -90,9 +90,19 @@ if self.sumitomo then
 			base_a_obj = "a_m",
 			part_attach_data = {
 				{"wpn_fps_lmg_sumitomo_m_belt"}, 
-				"rp_wpn_fps_lmg_svinet_m_standard"
+				"g_mag"
 			},
 			position = Vector3(0, 0, -22.5),
+			rotation = RotationCAP(0, 0, 0)
+		},
+		{
+			name = "a_m7",
+			base_a_obj = "a_m",
+			part_attach_data = {
+				{"wpn_fps_lmg_sumitomo_m_belt"}, 
+				"g_mag"
+			},
+			position = Vector3(0, 0, -27),
 			rotation = RotationCAP(0, 0, 0)
 		},
 		

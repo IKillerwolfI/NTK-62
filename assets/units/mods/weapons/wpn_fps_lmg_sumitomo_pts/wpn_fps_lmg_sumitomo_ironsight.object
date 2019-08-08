@@ -12,11 +12,17 @@
 	</animations>
 	
 	<graphics>
-		<graphic_group name="character" enabled="true" culling_object="g_sight_base">
+		<graphic_group name="GraphicGroupName" enabled="true" culling_object="g_body">
+			<object name="g_sight_adjust" enabled="true" />
+			<object name="g_sight_leaf" enabled="true" />
+			<object name="g_sight_base" enabled="true" />
+		</graphic_group> 
+		
+		<!--<graphic_group name="character" enabled="true" culling_object="g_sight_base">
 			<object name="g_sight_adjust" inherit_bounding_volume="co_culling" enabled="true" />
 			<object name="g_sight_leaf" inherit_bounding_volume="co_culling" enabled="true" />
 			<object name="g_sight_base" inherit_bounding_volume="co_culling" enabled="true" />
-		</graphic_group>
+		</graphic_group>-->
 		
 		<!--<object name="g_bolt" enabled="false" />-->
 	</graphics>

@@ -12,8 +12,14 @@
 	</animations>
 	
 	<graphics>
-		<object name="g_grip" enabled="true" />
-		<object name="g_trigger" enabled="true" />
+		<graphic_group name="GraphicGroupName" enabled="true" culling_object="g_body">
+			<object name="g_grip" enabled="true" />
+			<object name="g_trigger" enabled="true" />
+		</graphic_group> 
+	
+		<!--<object name="g_grip" enabled="true" />
+		<object name="g_trigger" enabled="true" />-->
+		
 		<!--<object name="g_bolt" enabled="false" />-->
 	</graphics>
 	
