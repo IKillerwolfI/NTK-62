@@ -12,7 +12,11 @@
 	</animations>
 	
 	<graphics>
-		<object name="g_shroud" enabled="true" />
+		<graphic_group name="GraphicGroupName" enabled="true" culling_object="g_body">
+			<object name="g_shroud" enabled="true" />		
+		</graphic_group> 
+		
+		<!--<object name="g_shroud" enabled="true" />-->
 		<!--<object name="g_bolt" enabled="true" />-->
 	</graphics>
 	

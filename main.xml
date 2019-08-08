@@ -57,12 +57,12 @@
 	</WeaponMod>
 	
 	<WeaponMod id="wpn_fps_lmg_sumitomo_ch_new" based_on="wpn_fps_lmg_par_body_standard" type="extra" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_ch_new" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
-		<stats reload="4"/>
+		<stats reload="3"/>
 		<pcs/>
 	</WeaponMod>
 	
 	<WeaponMod id="wpn_fps_lmg_sumitomo_ch_old" based_on="wpn_fps_lmg_par_body_standard" type="extra" has_description="true" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/wpn_fps_lmg_sumitomo_ch_old" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
-		<stats reload="2" concealment="3"/>
+		<stats reload="1" concealment="3"/>
 		<custom_stats movement_speed="1.2"/>
 		<pcs/>
 	</WeaponMod>
@@ -84,19 +84,19 @@
 		<pcs/>
 	</WeaponMod>
 	<WeaponMod id="wpn_fps_lmg_sumitomo_guide" based_on="wpn_fps_lmg_par_body_standard" type="magbox_clasp" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_guide" drop="false" is_a_unlockable="false"/>
-	<WeaponMod id="wpn_fps_lmg_sumitomo_m_belt2" based_on="wpn_fps_lmg_par_m_standard" type="magazine" a_obj="a_m2" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt2" drop="false" is_a_unlockable="false"/>
-	<WeaponMod id="wpn_fps_lmg_sumitomo_m_belt3" based_on="wpn_fps_lmg_par_m_standard" type="magazine" a_obj="a_m3" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt3" drop="false" is_a_unlockable="false"/>
-	<WeaponMod id="wpn_fps_lmg_sumitomo_m_belt4" based_on="wpn_fps_lmg_par_m_standard" type="magazine" a_obj="a_m4" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt4" drop="false" is_a_unlockable="false"/>
-	<WeaponMod id="wpn_fps_lmg_sumitomo_m_belt5" based_on="wpn_fps_lmg_par_m_standard" type="magazine" a_obj="a_m5" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt5" drop="false" is_a_unlockable="false"/>
-	<WeaponMod id="wpn_fps_lmg_sumitomo_m_belt6" based_on="wpn_fps_lmg_par_m_standard" type="magazine" a_obj="a_m6" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt6" drop="false" is_a_unlockable="false"/>
-	<WeaponMod id="wpn_fps_lmg_sumitomo_m_belt7" based_on="wpn_fps_lmg_par_m_standard" type="magazine" a_obj="a_m7" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt7" drop="false" is_a_unlockable="false"/>
+	<WeaponMod id="wpn_fps_lmg_sumitomo_m_belt2" based_on="wpn_fps_lmg_par_m_standard" type="extra" a_obj="a_m2" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt2" drop="false" is_a_unlockable="false"/>
+	<WeaponMod id="wpn_fps_lmg_sumitomo_m_belt3" based_on="wpn_fps_lmg_par_m_standard" type="extra" a_obj="a_m3" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt3" drop="false" is_a_unlockable="false"/>
+	<WeaponMod id="wpn_fps_lmg_sumitomo_m_belt4" based_on="wpn_fps_lmg_par_m_standard" type="extra" a_obj="a_m4" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt4" drop="false" is_a_unlockable="false"/>
+	<WeaponMod id="wpn_fps_lmg_sumitomo_m_belt5" based_on="wpn_fps_lmg_par_m_standard" type="extra" a_obj="a_m5" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt5" drop="false" is_a_unlockable="false"/>
+	<WeaponMod id="wpn_fps_lmg_sumitomo_m_belt6" based_on="wpn_fps_lmg_par_m_standard" type="extra" a_obj="a_m6" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt6" drop="false" is_a_unlockable="false"/>
+	<WeaponMod id="wpn_fps_lmg_sumitomo_m_belt7" based_on="wpn_fps_lmg_par_m_standard" type="extra" a_obj="a_m7" unit="units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_m_belt7" drop="false" is_a_unlockable="false"/>
 	
 	
 	
 	<WeaponNew unlock_level="70">
 		<weapon id="sumitomo" based_on="par" weapon_hold = "par" CLIP_AMMO_MAX="100" NR_CLIPS_MAX="3" CAN_TOGGLE_FIREMODE = "false" texture_bundle_folder="mods" global_value="sumitomomod">
 			<stats damage="120" spread="12" recoil="7" concealment="2" value="12"/>
-			<fire_mode_data fire_rate="0.1090909090909091"/> <!--0.1090909090909091 || 550 RPM--> <!--0.0666666666666667 || 900 RPM - mod testing-->
+			<fire_mode_data fire_rate="0.1090909090909091"/> <!--0.1090909090909091 || 550 RPM-->
 			<AMMO_PICKUP>
 				<value_node value="6"/>
 				<value_node value="10"/>

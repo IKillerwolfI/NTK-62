@@ -15,7 +15,7 @@ Hooks:PostHook( PlayerTweakData, "init", "SumitomoModInit", function(self)
 		
 	--check for LMG steelsight mod
 	if mod and mod:IsEnabled() then
-	else
+	
 	end
 	
 end )
