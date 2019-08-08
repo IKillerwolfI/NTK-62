@@ -30,13 +30,12 @@
 	</animations>
 
 	<graphics>
-		<object name="g_bullet_8" enabled="true" />
 		<object name="g_bullet_7" enabled="true" />
-		<!--<object name="g_bullet_6" enabled="true" />-->
-	
+		<object name="g_bullet_6" enabled="true" />
+
 		<!--<object name="g_mag" enabled="true" />-->
-		
-		<object name="g_bullet_2" enabled="false" />
-		<object name="g_bullet_1" enabled="false" />
+		<!--<object name="g_bullet_3" enabled="true" />
+		<object name="g_bullet_2" enabled="true" />
+		<object name="g_bullet_1" enabled="true" />-->
 	</graphics>
 </dynamic_object>
