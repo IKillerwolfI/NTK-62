@@ -44,6 +44,23 @@ if self.sumitomo then
 			rotation = RotationCAP(0, 0, 0)
 		},
 		
+		--Gadget Position
+		{
+			name = "a_fl",
+			base_a_obj = "a_fl",
+			position = Vector3(0, 0, 0),
+			rotation = Rotation(0, 0, 0)
+		},
+		
+		--Icon creation
+		-- {
+			-- name = "a_icon",
+			-- base_a_obj = "a_body",
+			-- position = Vector3(0, 0, 6),
+			-- rotation = Rotation(0, 0, 0)
+		-- },
+		
+		
 		--Ammo belt Positioning
 		{
 			name = "a_m2",
@@ -104,15 +121,7 @@ if self.sumitomo then
 			},
 			position = Vector3(0, 0, -27),
 			rotation = RotationCAP(0, 0, 0)
-		},
-		
-		--Gadget Position
-		{
-			name = "a_fl",
-			base_a_obj = "a_fl",
-			position = Vector3(0, 0, 0),
-			rotation = Rotation(0, 0, 0)
-		}
+		}		
 	}
 end
 
