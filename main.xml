@@ -206,14 +206,17 @@
 		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/frontsight_texture/barrel_df"/>
 		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/frontsight_texture/barrel_nm"/>
 		
-		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/howa64_texture/fnv_type64_df"/>
-		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/howa64_texture/fnv_type64_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/howa64_texture/michau_howa64_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/howa64_texture/michau_howa64_nm"/>
 		
 		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/akpack_texture/heffy_tabuk_furniture_df"/>
 		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/akpack_texture/heffy_tabuk_furniture_nm"/>
 		
 		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/fa-source_texture/m60_magbox_df"/>
 		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/fa-source_texture/m60_magbox_nm"/>
+		
+		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/rs1_texture/type99_lmg_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/rs1_texture/type99_lmg_nm"/>
 		
 		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/rs2_texture/m2_barrelshroud_df"/>
 		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/rs2_texture/m2_barrelshroud_nm"/>
@@ -222,9 +225,6 @@
 		
 		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_b_antiair/rs2_texture/dshk_barrel_df"/>
 		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_b_antiair/rs2_texture/dshk_barrel_nm"/>
-		
-		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/rs1_texture/type99_lmg_df"/>
-		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/rs1_texture/type99_lmg_nm"/>
 		
 		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/bf4_texture/m107_bipod_df"/>
 		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/bf4_texture/m107_bipod_nm"/>
@@ -239,16 +239,18 @@
 		
 		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/frontsight_texture/barrel_df_cc"/>
 		
-		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/howa64_texture/fnv_type64_df_cc"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/howa64_texture/michau_howa64_df_cc"/>
 		
 		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/akpack_texture/heffy_tabuk_furniture_df_cc"/>
 		
 		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/fa-source_texture/m60_magbox_df_cc"/>
 
+		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/rs1_texture/type99_lmg_df_cc"/>
+
 		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/rs2_texture/m2_barrelshroud_df_cc"/>
 		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/rs2_texture/m1919_ironsight_df_cc"/>
+
 		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_b_antiair/rs2_texture/dshk_barrel_df_cc"/>
-		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_pts/rs1_texture/type99_lmg_df_cc"/>
 		
 		<texture path="units/mods/weapons/wpn_fps_lmg_sumitomo_bipod/bf4_texture/m107_bipod_df_cc"/> -->
 
