@@ -15,7 +15,7 @@ Hooks:PostHook( WeaponFactoryTweakData, "init", "SumitomoModInit", function(self
 	end
 
 
-	--Heavy custom AA Barrel behaviour
+	--AA Barrel behaviour
 	self.parts.wpn_fps_lmg_sumitomo_b_long.override = { 
 		--not visible default part
 		wpn_fps_lmg_sumitomo_bl_shroud = { unit = "units/mods/weapons/wpn_fps_lmg_sumitomo_b_antiair/wpn_fps_lmg_sumitomo_bl_shroud" },
@@ -38,16 +38,16 @@ Hooks:PostHook( WeaponFactoryTweakData, "init", "SumitomoModInit", function(self
 
 
 	--300rnd Ammo-belt stuff
+	self.parts.wpn_fps_lmg_sumitomo_m_belt.thq_material_config = Idstring("units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_ammo_universal_thq")
+
 	self.parts.wpn_fps_lmg_sumitomo_m_belt2.bullet_objects = { amount = 7, prefix = "g_bullet_" }
 	self.parts.wpn_fps_lmg_sumitomo_m_belt3.bullet_objects = { amount = 9, prefix = "g_bullet_" }
 	self.parts.wpn_fps_lmg_sumitomo_m_belt4.bullet_objects = { amount = 11, prefix = "g_bullet_" }
 	self.parts.wpn_fps_lmg_sumitomo_m_belt5.bullet_objects = { amount = 13, prefix = "g_bullet_" }
 	self.parts.wpn_fps_lmg_sumitomo_m_belt6.bullet_objects = { amount = 15, prefix = "g_bullet_" }
 	self.parts.wpn_fps_lmg_sumitomo_m_belt7.bullet_objects = { amount = 17, prefix = "g_bullet_" }
-
-	self.parts.wpn_fps_lmg_sumitomo_m_belt.thq_material_config = Idstring("units/mods/weapons/wpn_fps_lmg_sumitomo_ammobelt/wpn_fps_lmg_sumitomo_ammo_universal_thq")
-
-		--looping through assigning each bullet object, thq material config files, and disabling reload animation to prevent wiggling.
+	
+	--looping through assigning each ammo belt object its: thq material config files; and disabling reload animation to prevent unintended wiggling from base anim
 	local sumitomo_belt_list = {
 		"wpn_fps_lmg_sumitomo_m_belt2",
 		"wpn_fps_lmg_sumitomo_m_belt3",
