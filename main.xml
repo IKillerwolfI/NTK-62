@@ -95,7 +95,7 @@
 	
 	<WeaponNew unlock_level="70">
 		<weapon id="sumitomo" based_on="par" weapon_hold = "par" CLIP_AMMO_MAX="100" NR_CLIPS_MAX="3" CAN_TOGGLE_FIREMODE = "false" texture_bundle_folder="mods" global_value="sumitomomod">
-			<stats damage="120" spread="12" recoil="7" concealment="2" value="12"/>
+			<stats damage="120" spread="12" recoil="6" concealment="2" value="12"/>
 			<fire_mode_data fire_rate="0.1090909090909091"/> <!--0.1090909090909091 || 550 RPM-->
 			<AMMO_PICKUP>
 				<value_node value="2.0"/>
